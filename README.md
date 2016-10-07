@@ -80,7 +80,8 @@ to me in the mid 90s:
 1. Open up any picture you want using Preview.
 2. Select all and copy.
 3. Locate your Launcher's `.app` and open up the Information window (`CMD+i`).
-4. Click on the icon in the top right. It should now have a glow around it.
+4. Click on the bigger icon in the top right. It should now have a glow around
+   it:
    ![](example_custom_icon_selected.png)
 5. Paste! And `boom clap raise your fist`:
    ![](example_custom_icon.png)
