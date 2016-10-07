@@ -52,8 +52,10 @@ rabbitmq to run is quite a pain. Why not automate?
 
     (…indentation sucks with the Script Editor. Also I would have loved to
     add these comments inside the script, but AppleScript does not allow
-    comments in data structure definitions…). Please also note our section in
-    this README about the `¬` character, further down below.
+    comments in data structure definitions…).
+
+    Please also read [our section in this README about the `¬` character](#the-),
+    further down below.
 3. Now go to `File`, hit `Export`.
 4. In the appearing dialog, set the fileformat to `Application`.
 5. Give it a nice name (`Launch Simpleloop.com` in this very case), put it into
