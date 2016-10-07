@@ -13,7 +13,7 @@ set termCommands to {¬
 
 
 # You shouldn't need to change anything below this line
-# ------------------------------------------------------------
+# --------------------------------------------------------
 
 # Taken from http://stackoverflow.com/questions/13653358/how-to-log-objects-to-a-console-with-applescript
 #
@@ -99,7 +99,7 @@ on splitOrRun(aSession, commandRecord)
 				if splitType = "v" then
 					tell application "iTerm"
 						tell aSession
-							set splitSession to split horizontally with default profile
+							set splitSession to split vertically with default profile
 							tell splitSession
 								write text splitCmd
 							end tell
@@ -108,7 +108,7 @@ on splitOrRun(aSession, commandRecord)
 				else if splitType = "h" then
 					tell application "iTerm"
 						tell aSession
-							set splitSession to split vertically with default profile
+							set splitSession to split horizontally with default profile
 							tell splitSession
 								write text splitCmd
 							end tell
