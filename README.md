@@ -65,6 +65,7 @@ rabbitmq to run is quite a pain. Why not automate?
 That's what our example here looks like (3 Tabs, the last one with 3 splits
 running postgres, redis and rabbitmq):
 
+![](example_screenshot.png)
 
 
 ### The `¬`
