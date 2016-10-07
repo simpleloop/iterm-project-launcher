@@ -27,23 +27,23 @@ rabbitmq to run is quite a pain. Why not automate?
    would typically enter to manually boot up a project and it's services:
 
     ```applescript
-    # The tabs to create. Each tab can either run a command, or
-    # split (v)ertically/(h)orizontally and run a command in that split
-    # You can see the resulting iTerm screenshotted further down the page.
+    --- The tabs to create. Each tab can either run a command, or
+    --- split (v)ertically/(h)orizontally and run a command in that split
+    --- You can see the resulting iTerm screenshotted further down the page.
     set termCommands to {¬
-        # Each item in here represents a tab
-        # This here would simply go to the project folder.
+        --- Each item in here represents a tab
+        --- This here would simply go to the project folder.
         {command:"workon simpleloop"}, ¬
-        # This would also switch to my project folder and execute `gulp serve`
+        --- This would also switch to my project folder and execute `gulp serve`
         {command:"workon simpleloop && gulp watch"}, ¬
-        # This is another tab. But it has special super cow powers...
+        --- This is another tab. But it has special super cow powers...
         {splits:{¬
-            # ...because it can do splits! (not in the JCVD sense)
-            # "v" creates a vertical splits (this would run postgres and redis
-            # a separate vertical splits)
+            --- ...because it can do splits! (not in the JCVD sense)
+            --- "v" creates a vertical splits (this would run postgres and redis
+            --- a separate vertical splits)
             {command:"postgres -D /usr/local/var/postgres", splitType:"v"}, ¬
             {command:"redis-server /usr/local/etc/redis.conf", splitType:"v"}, ¬
-            # "h" a horizontal split
+            --- "h" a horizontal split
             {command:"rabbitmq-server", splitType:"h"} ¬
                 } ¬
             } ¬
@@ -52,7 +52,8 @@ rabbitmq to run is quite a pain. Why not automate?
 
     (…indentation sucks with the Script Editor. Also I would have loved to
     add these comments inside the script, but AppleScript does not allow
-    comments in data structure definitions…)
+    comments in data structure definitions…). Please also note our section in
+    this README about the `¬` character, further down below.
 3. Now go to `File`, hit `Export`.
 4. In the appearing dialog, set the fileformat to `Application`.
 5. Give it a nice name (`Launch Simpleloop.com` in this very case), put it into
@@ -62,8 +63,8 @@ rabbitmq to run is quite a pain. Why not automate?
    name and hit Enter. `iTerm` should launch and magically start executing
    everything you wished for.
 
-That's what our example here looks like (3 Tabs, the last one with 3 splits
-running postgres, redis and rabbitmq):
+That's what our example here looks like (3 Tabs: first ones in my project
+folder, the last one with 3 splits running postgres, redis and rabbitmq):
 
 ![](example_screenshot.png)
 
