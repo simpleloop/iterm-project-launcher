@@ -70,7 +70,7 @@ rabbitmq to run is quite a pain. Why not automate?
 That's what our example here looks like (3 Tabs: first ones in my project
 folder, the last one with 3 splits running postgres, redis and rabbitmq):
 
-![](example_screenshot.png)
+![](screenshots/iterm_launched.png)
 
 
 ## Bonus: Changing the Launcher Icon
@@ -82,9 +82,9 @@ to me in the mid 90s:
 3. Locate your Launcher's `.app` and open up the Information window (`CMD+i`).
 4. Click on the bigger icon in the top right. It should now have a glow around
    it:
-   ![](example_custom_icon_selected.png)
+   ![](screenshots/info_icon_selected.png)
 5. Paste! And `boom clap raise your fist`:
-   ![](example_custom_icon.png)
+   ![](screenshots/info_custom_icon.png)
 
 
 ## Bonus: Development Tips
