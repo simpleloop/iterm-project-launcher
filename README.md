@@ -1,5 +1,5 @@
-# iterm-project-launcher
-Quicklauncher for your projects using AppleScript and [iTerm2 v3](https://www.iterm2.com/version3.html).
+# iterm-project-launcher 🚀
+🐰 Quicklauncher for your projects using AppleScript and [iTerm2 v3](https://www.iterm2.com/version3.html).
 
 At Simpleloop, most of our projects require different services to be run,
 because we don't do typical web projects with just a database and some PHP
@@ -8,8 +8,8 @@ rabbitmq to run is quite a pain. Why not automate?
 
 
 ## Requirements
-* AppleScript v2.0+ (OSX 10.5+, macOS Sierra+)
-* iTerm2 v3.0+
+* 🍎 AppleScript v2.0+ (OSX 10.5+, macOS Sierra+)
+* 🖥 iTerm2 v3.0+ 
 
 
 ## Files
@@ -64,6 +64,7 @@ rabbitmq to run is quite a pain. Why not automate?
 
 That's what our example here looks like (3 Tabs, the last one with 3 splits
 running postgres, redis and rabbitmq):
+
 
 
 ### The `¬`
