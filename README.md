@@ -1,4 +1,4 @@
-# iterm-project-launcher 🚀
+# 🚀 iterm-project-launcher
 🐰 Quicklauncher for your projects using AppleScript and [iTerm2 v3](https://www.iterm2.com/version3.html).
 
 At Simpleloop, most of our projects require different services to be run,
@@ -9,7 +9,7 @@ rabbitmq to run is quite a pain. Why not automate?
 
 ## Requirements
 * 🍎 AppleScript v2.0+ (OSX 10.5+, macOS Sierra+)
-* 🖥 iTerm2 v3.0+ 
+* 🖥  [iTerm2 v3.0+](https://www.iterm2.com/version3.html)
 
 
 ## Files
@@ -54,16 +54,18 @@ rabbitmq to run is quite a pain. Why not automate?
     add these comments inside the script, but AppleScript does not allow
     comments in data structure definitions…).
 
-    Please also read [our section in this README about the `¬` character](#the-),
-    further down below.
+    Note the weird `¬` character at the end of each line. AppleScript does not
+    support breaking expressions into multiple lines via a regular newline,
+    instead it uses this character to mark that. You can insert that character
+    by pressing `ALT+L` in the Script Editor.
 3. Now go to `File`, hit `Export`.
-4. In the appearing dialog, set the fileformat to `Application`.
+4. In the appearing dialogue, set the fileformat to `Application`.
 5. Give it a nice name (`Launch Simpleloop.com` in this very case), put it into
    your *Applications* folder and hit `Save`!
-6. Simply double click the resulting `.app` or, if you are big fans of Alred
-   like we are, simply hit up [Alfred](https://www.alfredapp.com/), enter the
-   name and hit Enter. `iTerm` should launch and magically start executing
-   everything you wished for.
+6. Simply double click the resulting `.app`. Note that
+   [Alfred](https://www.alfredapp.com/) also adds this to it's index. Hence, if
+   you use it (and you really should), you can even boot up your projects
+   nicely via Alfred (without needing the Powerpack 💰).
 
 That's what our example here looks like (3 Tabs: first ones in my project
 folder, the last one with 3 splits running postgres, redis and rabbitmq):
@@ -71,14 +73,7 @@ folder, the last one with 3 splits running postgres, redis and rabbitmq):
 ![](example_screenshot.png)
 
 
-### The `¬`
-Note the weird `¬` character at the end of each line. AppleScript does not
-support breaking expressions into multiple lines via a regular newline, instead
-it uses this character to mark that. You can insert that character by pressing
-`ALT+L`.
-
-
-## Bonus: Change the Launcher Icon
+## Bonus: Changing the Launcher Icon
 [Loving this](https://support.apple.com/kb/PH13922) since my father showed it
 to me in the mid 90s:
 
@@ -86,9 +81,9 @@ to me in the mid 90s:
 2. Select all and copy.
 3. Locate your Launcher's `.app` and open up the Information window (`CMD+i`).
 4. Click on the icon in the top right. It should now have a glow around it.
-5. Paste! And Boom bam raise your fist:
-
-![](example_custom_icon.png)
+   ![](example_custom_icon_selected.png)
+5. Paste! And `boom clap raise your fist`:
+   ![](example_custom_icon.png)
 
 
 ## Bonus: Development Tips
