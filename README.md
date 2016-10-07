@@ -76,3 +76,26 @@ Note the weird `¬` character at the end of each line. AppleScript does not
 support breaking expressions into multiple lines via a regular newline, instead
 it uses this character to mark that. You can insert that character by pressing
 `ALT+L`.
+
+
+## Bonus: Change the Launcher Icon
+[Loving this](https://support.apple.com/kb/PH13922) since my father showed it
+to me in the mid 90s:
+
+1. Open up any picture you want using Preview.
+2. Select all and copy.
+3. Locate your Launcher's `.app` and open up the Information window (`CMD+i`).
+4. Click on the icon in the top right. It should now have a glow around it.
+5. Paste! And Boom bam raise your fist:
+
+![](example_custom_icon.png)
+
+
+## Bonus: Development Tips
+Apple's Script Editor is OK, but you should really use something more capable
+like XCode or [Script Debugger by Late Night Software](http://latenightsw.com/).
+
+One nice thing is that you don't have to care too much about indentation, as
+the compile process (manually triggered by `CMD+k`) formats everything nicely.
+
+Also, make good use of the included `toString()` subroutine.
